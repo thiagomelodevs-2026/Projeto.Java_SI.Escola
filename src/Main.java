@@ -5,6 +5,9 @@ import enums.Cargo;
 import util.Input;
 import util.Menu;
 import util.Mensagens;
+import view.EscolaFrame;
+
+import javax.swing.SwingUtilities;
 
 public class Main {
 
@@ -30,6 +33,10 @@ public class Main {
             new LoginController();
 
     public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new EscolaFrame().setVisible(true));
+    }
+
+    public static void iniciarConsole() {
 
         int opcao;
 
